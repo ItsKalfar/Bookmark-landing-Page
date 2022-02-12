@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #252b46;
+}
+
+p {
+  font-size: 16px;
+  color: $grey;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+  max-width: 375px;
+}
+
+.btn {
+  font-family: $rubik;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 1rem 0;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  border: 2px solid $lightBlue;
+  color: $offWhite;
+  background-color: $lightBlue;
+  box-shadow: 0px 3px 10px 2px rgb(167, 167, 255);
+
+  &:hover {
+    background-color: #fff;
+    color: $lightBlue;
+  }
+}
+
+.btn-secondary {
+  border: 2px solid $offWhite;
+  color: $darkGrey;
+  background-color: $offWhite;
+  box-shadow: 0px 3px 10px 2px rgb(202, 202, 202);
+
+  &:hover {
+    background-color: #fff;
+    border: 2px solid $darkGrey;
+    color: $darkGrey;
+  }
+}

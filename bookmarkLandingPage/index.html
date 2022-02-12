@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="body">
+    <header class="header">
+      <div class="nav_container">
+        <img src="./images/logo-bookmark.svg" alt="logo" id="logo" />
+        <img
+          src="./images/icon-hamburger.svg"
+          alt="menu"
+          id="hamburger_icon"
+          onclick="openNav()"
+        />
+
+        <nav class="desktop_menu">
+          <ul class="desktop_menu_items">
+            <li class="menu_links"><a href="#features">Features</a></li>
+            <li class="menu_links"><a href="#">Pricing</a></li>
+            <li class="menu_links"><a href="#">Contact</a></li>
+            <li class="menu_links">
+              <button class="btn btn-red">LOGIN</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="mobile_menu_wrapper" id="menu" onclick="closeNav()">
+        <div class="mobile_menu">
+          <div class="topDiv">
+            <img src="./images/logo-bookmark-menu.svg" alt="menu_logo" />
+            <img
+              src="./images/icon-close.svg"
+              alt="close"
+              onclick="closeNav()"
+              id="close_icon"
+            />
+          </div>
+          <ul class="mobile_menu_items">
+            <li class="menu_links"><a href="#features">FEATURES</a></li>
+            <li class="menu_links"><a href="#">PRICING</a></li>
+            <li class="menu_links"><a href="#">CONTACT</a></li>
+          </ul>
+          <button class="btn btn-mobile-menu">LOGIN</button>
+          <div class="menu_social_links">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path
+                  fill="#FFF"
+                  fill-rule="evenodd"
+                  d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
+                />
+              </svg>
+            </a>
+
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+                <path
+                  fill="#FFF"
+                  fill-rule="evenodd"
+                  d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="container">
+        <img src="./images/illustration-hero.svg" alt="hero_img" />
+        <div class="hero_textBox">
+          <h1>A Simple Bookmark Manager</h1>
+          <p>
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+          <div class="call_to_action">
+            <button class="btn btn-primary">Get it on Chrome</button>
+            <button class="btn btn-secondary">Get it on Firefox</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container">
+        <h1 class="heading">Features</h1>
+        <p class="feature_text">
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+
+        <div class="tab_box">
+          <ul class="tab_links">
+            <li class="active" id="tab1">
+              <a class="active" id="tabOne"> Simple Bookmarking</a>
+            </li>
+            <li id="tab2"><a id="tabTwo"> Speedy Searching</a></li>
+            <li id="tab3"><a id="tabThree"> Easy Sharing</a></li>
+          </ul>
+
+          <div class="tab_inner_box">
+            <img
+              src="./images/illustration-features-tab-1.svg"
+              alt="tab_img"
+              class="tab_img"
+            />
+
+            <div class="tab_box_content">
+              <h1 class="tab_heading">Bookmark in one click</h1>
+              <p class="tab_text">
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="extension">
+      <div class="container">
+        <h1 class="heading">Download the extension</h1>
+        <p class="extension_text">
+          We’ve got more browsers in the pipeline. Please do let us know if
+          you’ve got a favourite you’d like us to prioritize.
+        </p>
+
+        <div class="card_wrapper">
+          <div class="card">
+            <img src="./images/logo-chrome.svg" alt="" />
+            <h3 class="heading">Add to Chrome</h3>
+            <p class="text">Minimum version 62</p>
+            <button class="btn_install">Add & Install Extension</button>
+          </div>
+          <div class="card">
+            <img src="./images/logo-firefox.svg" alt="" />
+            <h3 class="heading">Add to Firefox</h3>
+            <p class="text">Minimum version 55</p>
+            <button class="btn_install">Add & Install Extension</button>
+          </div>
+          <div class="card">
+            <img src="./images/logo-opera.svg" alt="" />
+            <h3 class="heading">Add to Opera</h3>
+            <p class="text">Minimum version 46</p>
+            <button class="btn_install">Add & Install Extension</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq_section">
+      <div class="container">
+        <h1 class="heading">Frequently Asked Questions</h1>
+        <p class="text">
+          Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.
+        </p>
+
+        <div class="faq_wrapper">
+          <div class="question_answer">
+            <div class="question">
+              <p>What is Bookmark?</p>
+              <a class="arrowBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="#5267DF"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="answer">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                tincidunt justo eget ultricies fringilla. Phasellus blandit
+                ipsum quis quam ornare mattis.
+              </p>
+            </div>
+          </div>
+          <div class="question_answer">
+            <div class="question">
+              <p>How can I request a new browser?</p>
+              <a class="arrowBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="#5267DF"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="answer">
+              <p>
+                Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+                massa, ultricies non ligula. Suspendisse imperdiet. Vivamus
+                luctus eros aliquet convallis ultricies. Mauris augue massa,
+                ultricies non ligula. Suspendisse imperdie tVivamus luctus eros
+                aliquet convallis ultricies. Mauris augue massa, ultricies non
+                ligula. Suspendisse imperdiet.
+              </p>
+            </div>
+          </div>
+          <div class="question_answer">
+            <div class="question">
+              <p>Is there a mobile app?</p>
+              <a class="arrowBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="#5267DF"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="answer">
+              <p>
+                Sed consectetur quam id neque fermentum accumsan. Praesent
+                luctus vestibulum dolor, ut condimentum urna vulputate eget.
+                Cras in ligula quis est pharetra mattis sit amet pharetra purus.
+                Sed sollicitudin ex et ultricies bibendum.
+              </p>
+            </div>
+          </div>
+          <div class="question_answer">
+            <div class="question">
+              <p>What about other Chromium browsers?</p>
+              <a class="arrowBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="#5267DF"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="answer">
+              <p>
+                Integer condimentum ipsum id imperdiet finibus. Vivamus in
+                placerat mi, at euismod dui. Aliquam vitae neque eget nisl
+                gravida pellentesque non ut velit.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn">More Info</button>
+      </div>
+    </section>
+
+    <section class="outro">
+      <div class="container">
+        <p class="text">35,000+ already joined</p>
+        <h2>Stay up-to-date with what we’re doing</h2>
+
+        <div class="inner_outro">
+          <div class="input_section">
+            <input
+              type="email"
+              name=""
+              id="email"
+              placeholder="Enter your email address"
+            />
+            <img src="./images/icon-error.svg" alt="" class="error" />
+          </div>
+
+          <button class="btn_outro">Contact Us</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="first_column">
+          <img
+            src="./images/logo-bookmark-dark.svg"
+            alt=""
+            class="footer_logo"
+          />
+
+          <ul class="footer_links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_social_icons">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                fill="#FFF"
+                fill-rule="evenodd"
+                d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
+              />
+            </svg>
+          </a>
+
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+              <path
+                fill="#FFF"
+                fill-rule="evenodd"
+                d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>

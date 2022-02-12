@@ -1,0 +1,129 @@
+.extension .container {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+}
+
+.extension .container .heading {
+  margin: 1rem auto;
+}
+
+.extension .container .extension_text {
+  color: #9194a1;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+.extension .container .card_wrapper {
+  padding: 0.75rem;
+}
+
+.extension .container .card_wrapper .card {
+  margin: 2.5rem auto;
+  padding: 3rem 2rem 2rem 2rem;
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  background: url(/images/bg-dots.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 73.5%;
+  width: 300px;
+}
+
+.extension .container .card_wrapper .card img {
+  margin-bottom: 1.5rem;
+}
+
+.extension .container .card_wrapper .card .heading {
+  font-family: "Rubik", sans-serif;
+  margin: 0.5rem auto;
+}
+
+.extension .container .card_wrapper .card .text {
+  margin-bottom: 4rem;
+  font-family: "Rubik", sans-serif;
+  color: #9194a1;
+}
+
+.extension .container .card_wrapper .card .btn_install {
+  width: 100%;
+  padding: 0.85rem;
+  background-color: #5368df;
+  border: 2px solid #5368df;
+  outline: none;
+  border-radius: 0.25rem;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  font-weight: 500;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.extension .container .card_wrapper .card .btn_install:hover {
+  background-color: transparent;
+  color: #5368df;
+}
+
+@media screen and (min-width: 1024px) {
+  .extension {
+    .container {
+      max-width: 1024px;
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+
+      .extension_text {
+        font-size: 18px;
+        width: 32rem;
+        margin: 1rem auto;
+      }
+
+      .card_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .extension .container .card_wrapper .card:nth-child(1) {
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2.5rem);
+    }
+  }
+
+  .extension .container .card_wrapper .card:nth-child(2) {
+    -webkit-transform: translateY(2.5rem);
+    transform: translateY(2.5rem);
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: translateY(0rem);
+    }
+  }
+  .extension .container .card_wrapper .card:nth-child(3) {
+    -webkit-transform: translateY(5rem);
+    transform: translateY(5rem);
+
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: translateY(0rem);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .extension {
+    .container {
+      max-width: 1280px;
+    }
+  }
+}

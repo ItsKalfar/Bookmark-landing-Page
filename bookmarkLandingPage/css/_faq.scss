@@ -1,0 +1,125 @@
+.faq_section .container {
+  padding: 4rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.faq_section .container .heading {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #252b46;
+}
+
+.faq_section .container .text {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #9194a1;
+  line-height: 1.5;
+}
+
+.faq_section .container .faq_wrapper {
+  margin: 3rem auto;
+}
+
+.faq_section .container .faq_wrapper .question_answer {
+  border-bottom: 1px solid #9194a1;
+}
+
+.faq_section .container .faq_wrapper .question_answer .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.faq_section .container .faq_wrapper .question_answer .question p {
+  color: #252b46;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.faq_section .container .faq_wrapper .question_answer .question p:hover {
+  color: #fa5757;
+}
+
+.faq_section .container .faq_wrapper .question_answer .question a {
+  cursor: pointer;
+}
+
+.faq_section .container .faq_wrapper .question_answer .answer {
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.1s ease-out;
+}
+
+.faq_section .container .faq_wrapper .question_answer .answer p {
+  color: #9194a1;
+  padding-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.faq_section .container .faq_wrapper .question_answer.active .answer {
+  height: 100%;
+  padding: 1rem 0rem;
+}
+
+.faq_section .container .faq_wrapper .question_answer.active .question a {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.faq_section
+  .container
+  .faq_wrapper
+  .question_answer.active
+  .question
+  a
+  svg
+  path {
+  stroke: #fa5757;
+}
+
+.faq_section .container .btn {
+  border: 2px solid #5368df;
+  outline: none;
+  border-radius: 4px;
+  padding: 1rem 1.75rem;
+  background-color: #5368df;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.faq_section .container .btn:hover {
+  background-color: #fff;
+  color: #5368df;
+}
+
+@media screen and (min-width: 768px) {
+  .faq_section {
+    .container {
+      max-width: 600px;
+    }
+  }
+}
